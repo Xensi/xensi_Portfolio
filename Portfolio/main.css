@@ -1,0 +1,56 @@
+h1,h3 {
+            color:rgb(115,223,169);
+            font-family:styllo;
+            text-align:center;
+        }
+        body {
+            background-color:rgb(300,300,300);
+            text-align:center;
+            font-family:arial;
+        }
+        @font-face {
+            font-family:styllo;
+            
+            src:url("styllo.otf");
+        }
+        
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    text-align:center;
+    display:inline-block;
+    border:0px;
+    padding:10px;
+    background-color:rgb(300,300,300);
+    
+
+}
+#navbar li:hover {
+    background-color:rgb(230,230,230);
+}
+#navbar a {
+    display: block;
+    width: 60px;
+    font-family:styllo;
+    text-decoration:none;
+    text-transform:lowercase;
+}
+
+#navbar a:link, #navbar a:visited {
+    color:rgb(115,223,169);
+}
+
+#navbar a:hover {
+    transform: scale(1.5);
+    transition: all .3s ease-out;
+}
+
+#wip{
+    transform: rotate(50);
+    transition: all .3s ease-in-out;
+}

@@ -20,44 +20,35 @@
 </div>
 </body>
 </html>
- 
-  <script>  $("#screen input").focus();
-    $("#screen input").on('keydown', function(event) {
-        if(event.which === 13) {
-            var $this = $(this), 
-                val = $this.val();
-            $this.focus().val('');
-            if(val === "hello world"){
-                alert("you found the easter egg!");
-            }
-        }
-    });
-    </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!>$(".input1").keyup(function (e) {
+<script> $(".input1").keyup(function (e) {
     if (e.keyCode == 13) {
-        // Do something
+        var $this = $(this),
+            val = $this.val();
+        $this.focus().val('');
+        if(val === "hello world"){
+        alert("omfg bro");    
+        }
     }
 });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

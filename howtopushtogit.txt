@@ -1,0 +1,7 @@
+git add -A
+git commit -m "-a"
+git push
+
+enter github credentials
+username
+password

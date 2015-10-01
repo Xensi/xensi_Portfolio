@@ -81,17 +81,3 @@ $("#screen input").focus();
         });
     }
 })(jQuery);
-
-function rotateSeven() {
-    $('#brk').stop().rotate({ angle:0, animateTo: 7, duration:600, callback: function() {
-        rotateNegative();
-        }
-    });
-}
-
-function rotateNegative() {
-    $('#brk').stop().rotate({ angle:0, animateTo: -7, duration:600, callback: function()  {
-        rotateSeven();
-        }
-    });
-}

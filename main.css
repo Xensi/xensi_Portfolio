@@ -14,11 +14,16 @@ h1,h3 {
             src:url("styllo.otf");
         }
         
+#admin {
+    font-family:"courier";
+}
+        
 #navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 #navbar li {

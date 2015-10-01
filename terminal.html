@@ -5,34 +5,35 @@
         <title>KIRYUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="website" type="text/html" href="index.html">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="glitch.jquery.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('span.block').glitch();
+      });
+    </script>
     </head>
     <body>
 <ul id="navbar">
     <li><a href="index.html">Home</a></li>
     <li><a href="links.html">Links</a></li>
-    <li><a href="terminal.html"><u>Terminal</u></a></li>
+    <li><a href="terminal.html"><span class="block"><u>Terminal</u></span></a></li>
 </ul>
 <h1>xensi's portfolio</h1>
+<h3>you are currently <span class="block">[REDACTED]</span></h3>
+<p id="admin"><span class="block">An unexpected error has occured.</span> 
+    <br><span class="block">You now have administrator access.</span></p>
 <div id="computer">
     <div id="screen">&gt;admin shell -p</div>
-    <div id="screen">&gt;<input size="98"></input></div>
+    <div id="screen">&gt;<input size="80"></input></div>
 
-</div>
-</body>
-</html>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- load scripts at the bottom of your page -->
+<script src="site.js"></script>
 
-
-<script> $(".input1").keyup(function (e) {
-    if (e.keyCode == 13) {
-        var $this = $(this),
-            val = $this.val();
-        $this.focus().val('');
-        if(val === "hello world"){
-        alert("omfg bro");    
-        }
-    }
-});
-</script>
+ 
+</body>  
 
 
 

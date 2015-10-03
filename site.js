@@ -8,7 +8,7 @@ $("#screen input").focus();
             if(val === "$ask what would happen if I input your mom")
                 document.getElementById("addtext").innerHTML ="Nothing. Terminals don't have parents. However, if I input your mom . . .";
             if(val === "help")
-                 document.getElementById("addtext").innerHTML ="Command list: help: displays this help command $ask: asks this terminal a question";
+                 document.getElementById("addtext").innerHTML ="Command list: <br> help: displays this help command <br> $ask: asks this terminal a question <br> $override cred: allows you to override ";
             if(val == "$ask are you lonely")
                 document.getElementById("addtext").innerHTML = "No. I'm just a terminal. I have no concept of loneliness.";               
             if(val == "$ask are you gay")

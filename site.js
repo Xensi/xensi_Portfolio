@@ -1,41 +1,37 @@
 
-    
 $("#screen input").focus();
     $("#screen input").on('keydown', function(event) {
         if(event.which === 13) {// Enter key pressed
-            var $this = $(this), 
-                val = $this.val();
-            $this.focus().val('');
-            if(val === "input your mom"){
-                alert("FATAL ERROR: WEBSITE OVERLOADED");
+            var $ans = $(this), 
+                val = $ans.val();
+            $ans.focus().val('');
+            if(val === "$ask what would happen if I input your mom")
+                document.getElementById("addtext").innerHTML ="Nothing. Terminals don't have parents. However, if I input your mom . . .";
+            if(val === "help")
+                 document.getElementById("addtext").innerHTML ="Command list: help: displays this help command $ask: asks this terminal a question";
+            if(val == "$ask are you lonely")
+                document.getElementById("addtext").innerHTML = "No. I'm just a terminal. I have no concept of loneliness.";               
+            if(val == "$ask are you gay")
+                document.getElementById("addtext").innerHTML = "You have better things to ask.";    
+            if(val == "$override cred admin: adminoverride action break")
+                document.getElementById("addtext").innerHTML = "error 133: an unexpected or forced shutdown has occurred";
+                {
             }
         }
     });
 
 
-$("#screen input").focus();
-    $("#screen input").on('keydown', function(event) {
-        if(event.which === 13) {// Enter key pressed
-            var $this = $(this), 
-                val = $this.val();
-            $this.focus().val('');
-            if(val === "NA NI"){
-                alert("WHAT?!1?1");
-            }
-        }
-    });
-    
-    
+
 
 (function($){
     $.fn.glitch = function(options) {
         var s = $.extend({
             bg: null,    // background color
-            maxint: 2,     // max interval between glitchings
+            maxint: .9,     // max interval between glitchings
             minint: .5,      // min interval between glitchings
             maxglitch: 5,   // max number of twitches
-            hshift: 3,      // max horizontal shift 
-            vshift: 3,      // max vertical shift
+            hshift: 1,      // max horizontal shift 
+            vshift: 2,      // max vertical shift
             direction: 'random' // 'horizontal', 'vertical' or 'random'
         }, options);
 

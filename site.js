@@ -38,7 +38,7 @@ $("#screen input").focus();
             minint: .5,      // min interval between glitchings
             maxglitch: 5,   // max number of twitches
             hshift: 1,      // max horizontal shift 
-            vshift: 2,      // max vertical shift
+            vshift: 1,      // max vertical shift
             direction: 'random' // 'horizontal', 'vertical' or 'random'
         }, options);
 

@@ -5,8 +5,8 @@ $("#screen input").focus();
             var $ans = $(this), 
                 val = $ans.val();
             $ans.focus().val('');
-            if(val === "$ask what would happen if I input your mom")
-                document.getElementById("addtext").innerHTML ="Nothing. Terminals don't have parents. However, if I input your mom . . .";
+            if(val === "$ask what would happen if I $input your mom")
+                document.getElementById("addtext").innerHTML ="Nothing. Terminals don't have parents. However, if I input your mom, it would most likely overload the website.";
             if(val === "help")
                  document.getElementById("addtext").innerHTML ="Command list: <br> help: displays this help command <br> $ask: asks this terminal a question <br> $override cred: allows you to override ";
             if(val == "$ask are you lonely")
@@ -17,6 +17,11 @@ $("#screen input").focus();
                 document.getElementById("addtext").innerHTML = "error 133: an unexpected or forced shutdown has occurred";
             if(val == "$debug test")
                 document.getElementById("addtext").innerHTML = "Terminal seems to be working.";
+            if(val == "$ask")
+                document.getElementById("addtext").innerHTML = "Examples of things you can ask: <br> are you lonely <br> what would happen if I $input your mom"    
+                
+                
+                
                 {
             }
         }

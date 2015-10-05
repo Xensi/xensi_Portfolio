@@ -8,7 +8,7 @@ $("#screen input").focus();
             if(val === "$ask what would happen if I $input your mom")
                 document.getElementById("addtext").innerHTML ="Nothing. Terminals don't have parents. However, if I input your mom, it would most likely overload the website.";
             if(val === "help")
-                 document.getElementById("addtext").innerHTML ="Command list: <br> help: displays this help command <br> $ask: asks this terminal a question <br> $override cred: allows you to override ";
+                 document.getElementById("addtext").innerHTML ="Command list: <br> help: displays this help command <br> $ask: asks this terminal a question <br> $override cred: allows you to override and do terminal-breaking commands <br> $debug: allows you to perform checks on the system";
             if(val == "$ask are you lonely")
                 document.getElementById("addtext").innerHTML = "No. I'm just a terminal. I have no concept of loneliness.";               
             if(val == "$ask are you gay")
@@ -19,7 +19,10 @@ $("#screen input").focus();
                 document.getElementById("addtext").innerHTML = "Terminal seems to be working.";
             if(val == "$ask")
                 document.getElementById("addtext").innerHTML = "Examples of things you can ask: <br> are you lonely <br> what would happen if I $input your mom"    
-                
+            if(val == "$debug")
+                document.getElementById("addtext").innerHTML = "Examples of things you can test: <br> test: tests to see if the terminal is working (at its most basic functionality) <br>version: checks the version of the terminal"
+            if(val == "$debug version") 
+                document.getElementById("addtext").innerHTML = "Terminal v2.4 is active."
                 
                 
                 {

@@ -14,7 +14,7 @@ $("#screen input").focus();
             if(val == "$ask are you gay")
                 document.getElementById("addtext").innerHTML = "You have better things to ask.";    
             if(val == "$override cred admin: adminoverride action break")
-                document.getElementById("addtext").innerHTML = "error 133: an unexpected or forced shutdown has occurred";
+                document.getElementById("addtext").innerHTML = "error 135: an unexpected or forced shutdown has occurred";
             if(val == "$debug test")
                 document.getElementById("addtext").innerHTML = "Terminal seems to be working.";
             if(val == "$ask")
